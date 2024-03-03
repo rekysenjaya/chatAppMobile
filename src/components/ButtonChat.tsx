@@ -12,7 +12,8 @@ const listUser = [
 ]
 
 const Button = ({ name }: { name: string }) => {
-  const count = useChatData().filter(item => (!item.read && item.me === name)).length
+  const chatData = useChatData()
+  const count = (chatData || []).filter(item => (!item.read && item.me === name))?.length
 
   return <View style={styles.button}>
     <Text style={styles.buttonText}>Chat {name}</Text>

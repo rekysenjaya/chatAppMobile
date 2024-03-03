@@ -23,7 +23,7 @@ const { width, height } = Dimensions.get('screen')
 
 const ListItem = ({ item, index, viewbleItems, to }: { item: ChatItem, index: number, viewbleItems: Animated.SharedValue<ViewToken[]>, to: string }) => {
   const rStyle = useAnimatedStyle(() => {
-    const isVisible = Boolean(viewbleItems.value.filter((item) => item.isViewable).find((viewbleItem) => viewbleItem.item.id == item.id))
+    const isVisible = Boolean((viewbleItems?.value || []).filter((item) => item.isViewable).find((viewbleItem) => viewbleItem.item.id == item.id))
 
     return {
       opacity: withTiming(isVisible ? 1 : 0),
