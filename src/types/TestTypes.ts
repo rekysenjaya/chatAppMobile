@@ -2,8 +2,8 @@ export interface UserType {
   data: []
 }
 
-export interface ChatType {
-
+export interface ReadData {
+  to: string,
 }
 
 export interface ChatItem {

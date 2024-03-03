@@ -1,6 +1,5 @@
-import type { ChatType, UserType } from "../../types/TestTypes";
-
 import {
+  READ_CHAT,
   SEND_CHAT,
   UserActionTypes,
   UserState,
@@ -70,6 +69,16 @@ export function userReducer(state = initialState, action: UserActionTypes) {
       return {
         ...state,
         chat: [...state.chat, action.payload],
+      };
+    case READ_CHAT:
+      return {
+        ...state,
+        chat: state.chat.map(item => {
+          if (action.payload.to === item.to) {
+            return ({ ...item, read: true })
+          }
+          return item
+        })
       };
     default:
       return state;

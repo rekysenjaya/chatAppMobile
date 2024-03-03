@@ -4,14 +4,21 @@ import { StackNavigationProp } from "@react-navigation/stack";
 
 import { RootStackParamList } from "../types/NavigatorTypes";
 
+import { useChatData } from "../hooks";
+
 const listUser = [
   { to: 'Lisa', me: 'Dian' },
   { to: 'Dian', me: 'Lisa' }
 ]
 
 const Button = ({ name }: { name: string }) => {
+  const count = useChatData().filter(item => (!item.read && item.me === name)).length
+
   return <View style={styles.button}>
     <Text style={styles.buttonText}>Chat {name}</Text>
+    {!!count && <View style={styles.badge}>
+      <Text style={styles.badgeText}>{count}</Text>
+    </View>}
   </View>
 }
 
@@ -31,12 +38,26 @@ const styles = StyleSheet.create({
     padding: 15,
     paddingHorizontal: 25,
     backgroundColor: '#fff',
-    borderRadius: 20
+    borderRadius: 20,
+    position: 'relative'
   },
   buttonText: {
     fontWeight: 'bold'
   },
   marginTouch: {
     marginBottom: 30
+  },
+  badge: {
+    position: 'absolute',
+    top: -5,
+    right: -5,
+    backgroundColor: '#FC9393',
+    borderRadius: 100,
+    paddingBottom: 1,
+    paddingHorizontal: 4
+  },
+  badgeText: {
+    color: 'white',
+    fontWeight: 'bold'
   }
 });

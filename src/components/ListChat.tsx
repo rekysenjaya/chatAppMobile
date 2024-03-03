@@ -7,11 +7,16 @@ import {
   ViewToken,
   StyleSheet
 } from "react-native";
+import { useDispatch } from "react-redux";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from "react-native-reanimated";
 
 import { ChatItem } from "../types/TestTypes";
+
 import { useChatData } from "../hooks";
+
+import { readChat } from "../store/user/actions";
+
 import InputChat from "./InputChat";
 
 const { width, height } = Dimensions.get('screen')
@@ -39,6 +44,7 @@ const ListItem = ({ item, index, viewbleItems, to }: { item: ChatItem, index: nu
 }
 
 const ListChat = ({ to, me }: { to: string, me: string }) => {
+  const dispatch: any = useDispatch();
   const { top, bottom } = useSafeAreaInsets();
   const listChatData = useChatData()
 
@@ -53,8 +59,14 @@ const ListChat = ({ to, me }: { to: string, me: string }) => {
   }
 
   useEffect(() => {
+    dispatch(readChat(me))
+  }, [])
+
+  useEffect(() => {
     if (listChatData?.length) {
-      scrollToBottom()
+      setTimeout(() => {
+        scrollToBottom()
+      }, 1000);
     }
   }, [listChatData])
 
