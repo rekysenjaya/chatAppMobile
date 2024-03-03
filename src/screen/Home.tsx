@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   View,
-  Text,
-  TouchableOpacity,
   Dimensions,
   StyleSheet,
 } from "react-native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { RouteProp } from "@react-navigation/core";
+import SplashScreen from "react-native-splash-screen";
 
 import { RootStackParamList } from "../types/NavigatorTypes";
 
@@ -31,6 +30,10 @@ type Prop = {
 
 
 const Home = ({ navigation }: Prop) => {
+  useEffect(()=>{
+    SplashScreen.hide();
+  },[])
+  
   return (<Background>
     <View style={styles.container}>
       <ButtonChat navigation={navigation} />
