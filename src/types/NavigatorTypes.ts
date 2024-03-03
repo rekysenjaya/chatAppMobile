@@ -1,6 +1,7 @@
 export type RootStackParamList = {
   Chat: {
-    name: string
+    to: string,
+    me: string,
   };
   Home: undefined;
 };

@@ -1,25 +1,20 @@
 import React from "react";
-import {
-  View,
-  Dimensions,
-} from "react-native";
-import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { StackNavigationProp } from "@react-navigation/stack";
 import { RouteProp } from "@react-navigation/core";
+import { useIsFocused } from "@react-navigation/native";
 
 import { RootStackParamList } from "../types/NavigatorTypes";
 
 import Header from "../components/Header";
 import ListChat from "../components/ListChat";
-import InputChat from "../components/InputChat";
-
-const { width, height } = Dimensions.get('screen')
+import Background from "../components/Background";
 
 type ChatRouteType = RouteProp<
   RootStackParamList,
   "Chat"
 >;
 
-type ChatNavigationProp = NativeStackNavigationProp<
+type ChatNavigationProp = StackNavigationProp<
   RootStackParamList,
   "Chat"
 >;
@@ -30,13 +25,15 @@ type Prop = {
 };
 
 const Chat = ({ route, navigation }: Prop) => {
-  const name = route.params?.name
+  const to = route.params?.to
+  const me = route.params?.me
+  const isFocus = useIsFocused()
+  
 
-  return (<View>
-    <Header title={name} />
-    <ListChat name={name} />
-    <InputChat name={name} />
-  </View >)
+  return (<Background>
+    <Header title={to} />
+    {isFocus && <ListChat to={to} me={me}  />}
+  </Background >)
 }
 
 export default Chat;

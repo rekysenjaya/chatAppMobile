@@ -1,16 +1,15 @@
-import type { UserType } from "../../types/TestTypes";
+import type { ChatItem, ChatType, UserType } from "../../types/TestTypes";
 export interface UserState {
-  user: UserType;
+  user: string[];
+  chat: ChatItem[];
 }
 
-export const ADD_DATA_TEST_PENDING = "ADD_DATA_TEST_PENDING";
-export const ADD_DATA_TEST_SUCCESS = "ADD_DATA_TEST_SUCCESS";
-export const ADD_DATA_TEST_ERROR = "ADD_DATA_TEST_ERROR";
+export const SEND_CHAT = "SEND_CHAT";
 
-interface AddDataTestAction {
-  type: typeof ADD_DATA_TEST_SUCCESS;
-  payload: UserType;
+interface SendChat {
+  type: typeof SEND_CHAT;
+  payload: ChatType;
 }
 
 export type UserActionTypes =
-  | AddDataTestAction;
+  | SendChat;

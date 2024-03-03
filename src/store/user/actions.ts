@@ -1,17 +1,16 @@
 import { Dispatch } from "redux";
 import {
-  ADD_DATA_TEST_ERROR,
-  ADD_DATA_TEST_PENDING,
-  ADD_DATA_TEST_SUCCESS,
+  SEND_CHAT
 } from "./types";
 
-export const getDataTest = (
-  cb?: (e?: any) => void,
-  onError?: (err?: any) => void
+export const sendChat = (
+  to: string,
+  me: string,
+  chat: string
 ) => async (dispatch: Dispatch) => {
   try {
-    dispatch({ type: ADD_DATA_TEST_PENDING });
+    dispatch({ type: SEND_CHAT, payload: { to, me, chat, read: false, id: Date.now() } });
   } catch (err) {
-    dispatch({ type: ADD_DATA_TEST_ERROR });
+
   }
 };
