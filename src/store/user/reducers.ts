@@ -60,6 +60,27 @@ const initialState: UserState = {
       read: false,
       id: 2121228
     },
+    {
+      to: 'Lisa',
+      me: 'Dian',
+      chat: 'Ok, nanti kita obrolin ya, jangan lupa',
+      read: false,
+      id: 2121229
+    },
+    {
+      to: 'Dian',
+      me: 'Lisa',
+      chat: 'Ok kalau gitu',
+      read: false,
+      id: 2121230
+    },
+    {
+      to: 'Dian',
+      me: 'Lisa',
+      chat: 'See you',
+      read: false,
+      id: 2121231
+    },
   ]
 };
 
