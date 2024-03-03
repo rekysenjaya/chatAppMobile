@@ -15,6 +15,8 @@ import { ChatItem } from "../types/TestTypes";
 
 import { useChatData } from "../hooks";
 
+import fonts from "../configs/fonts";
+
 import { readChat } from "../store/user/actions";
 
 import InputChat from "./InputChat";
@@ -77,6 +79,7 @@ const styles = StyleSheet.create({
     alignItems: 'baseline',
   },
   listHeaderChatText: {
+    fontFamily: fonts.ManropeBold,
     textAlign: 'center',
     color: '#fff',
     fontSize: 13,

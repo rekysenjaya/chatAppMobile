@@ -5,6 +5,7 @@ import Animated, { useAnimatedStyle, withTiming } from "react-native-reanimated"
 import { useChatData } from "../hooks"
 
 import { ChatItem } from "../types/TestTypes";
+import fonts from "../configs/fonts";
 
 const { width } = Dimensions.get('screen')
 
@@ -39,7 +40,7 @@ const ListItem = ({ item, index, viewbleItems, to, me }: { item: ChatItem, index
     <View style={[styles.listItemFlex, { justifyContent: item?.to == to ? 'flex-end' : 'flex-start' }]}>
       {!(item?.to == to) && roundChat}
       <View style={[styles.listItemCard, { backgroundColor: item?.to == to ? '#884FE5' : '#F5F6FB' }]}>
-        <Text style={{ maxWidth: (width - 108) * .9, fontWeight: '500', fontSize: 14, color: item?.to == to ? '#fff' : '#1B1B1B', textAlign: item?.to == to ? 'right' : 'left' }}>{item?.chat}</Text>
+        <Text style={[styles.listItemText, { maxWidth: (width - 108) * .9, color: item?.to == to ? '#fff' : '#1B1B1B', textAlign: item?.to == to ? 'right' : 'left' }]}>{item?.chat}</Text>
       </View>
     </View>
   </Animated.View>
@@ -68,12 +69,18 @@ const styles = StyleSheet.create({
     backgroundColor: '#FC9393',
     marginRight: 5
   },
+  listItemText: {
+    fontFamily: fonts.ManropeMedium,
+    fontWeight: '500',
+    fontSize: 14
+  },
   listItemCard: {
     borderRadius: 16,
     padding: 8,
     paddingHorizontal: 12
   },
   listHeaderChatText: {
+    fontFamily: fonts.ManropeBold,
     textAlign: 'center',
     color: '#fff',
     fontSize: 13,

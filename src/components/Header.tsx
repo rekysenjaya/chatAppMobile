@@ -9,6 +9,7 @@ import {
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import images from "../configs/images";
+import fonts from "../configs/fonts";
 
 import NavigationService from "../utils/NavigationService";
 
@@ -50,6 +51,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     color: '#fff',
     fontSize: 24,
+    fontFamily: fonts.ManropeBold,
     fontWeight: '700'
   }
 });

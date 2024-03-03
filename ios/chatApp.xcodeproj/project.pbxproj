@@ -12,8 +12,16 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		157F1E2048AB4EFCB2AE701D /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB3B29A550B346AF810855BD /* Manrope-Regular.ttf */; };
+		16D98F5CC40E46728F4FD5F9 /* Manrope-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68A2D2F0D6F9419D9A129D27 /* Manrope-ExtraLight.ttf */; };
+		196184037C134605AB092B7A /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 902C8106031340DF99809A27 /* Manrope-Medium.ttf */; };
+		4F42E5779B6F4C67900856AF /* Manrope-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 019490E4AAB54241B6236D4B /* Manrope-Light.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-chatApp-chatAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-chatApp-chatAppTests.a */; };
+		7A3F5E6D3DFF44BE9CB3F6A7 /* Manrope-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 011A2847CCC24F7BBDAE38A5 /* Manrope-ExtraBold.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		867092DC92D64CFDBAEACACA /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16343744933E41ACBBDC6D35 /* Manrope-SemiBold.ttf */; };
+		AD96F1005EFD474F8F156A53 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B32061A480FE4A2AA01D73CB /* Manrope-Bold.ttf */; };
+		FA920F282B94365300A40276 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = FA920F272B94365300A40276 /* fonts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +38,28 @@
 		00E356EE1AD99517003FC87E /* chatAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* chatAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chatAppTests.m; sourceTree = "<group>"; };
+		011A2847CCC24F7BBDAE38A5 /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-ExtraBold.ttf"; path = "../src/assets/fonts/Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
+		019490E4AAB54241B6236D4B /* Manrope-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Light.ttf"; path = "../src/assets/fonts/Manrope-Light.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* chatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = chatApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = chatApp/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = chatApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = chatApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = chatApp/main.m; sourceTree = "<group>"; };
+		16343744933E41ACBBDC6D35 /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-SemiBold.ttf"; path = "../src/assets/fonts/Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-chatApp-chatAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-chatApp-chatAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-chatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatApp.debug.xcconfig"; path = "Target Support Files/Pods-chatApp/Pods-chatApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-chatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatApp.release.xcconfig"; path = "Target Support Files/Pods-chatApp/Pods-chatApp.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-chatApp-chatAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatApp-chatAppTests.debug.xcconfig"; path = "Target Support Files/Pods-chatApp-chatAppTests/Pods-chatApp-chatAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-chatApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-chatApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A2D2F0D6F9419D9A129D27 /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-ExtraLight.ttf"; path = "../src/assets/fonts/Manrope-ExtraLight.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = chatApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-chatApp-chatAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatApp-chatAppTests.release.xcconfig"; path = "Target Support Files/Pods-chatApp-chatAppTests/Pods-chatApp-chatAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		902C8106031340DF99809A27 /* Manrope-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Medium.ttf"; path = "../src/assets/fonts/Manrope-Medium.ttf"; sourceTree = "<group>"; };
+		B32061A480FE4A2AA01D73CB /* Manrope-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Bold.ttf"; path = "../src/assets/fonts/Manrope-Bold.ttf"; sourceTree = "<group>"; };
+		DB3B29A550B346AF810855BD /* Manrope-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Regular.ttf"; path = "../src/assets/fonts/Manrope-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FA920F272B94365300A40276 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,12 +132,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				FA920F272B94365300A40276 /* fonts */,
 				13B07FAE1A68108700A75B9A /* chatApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* chatAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				EF222EB6A82142D6851B5383 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -146,6 +164,20 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-chatApp-chatAppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF222EB6A82142D6851B5383 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B32061A480FE4A2AA01D73CB /* Manrope-Bold.ttf */,
+				011A2847CCC24F7BBDAE38A5 /* Manrope-ExtraBold.ttf */,
+				68A2D2F0D6F9419D9A129D27 /* Manrope-ExtraLight.ttf */,
+				019490E4AAB54241B6236D4B /* Manrope-Light.ttf */,
+				902C8106031340DF99809A27 /* Manrope-Medium.ttf */,
+				DB3B29A550B346AF810855BD /* Manrope-Regular.ttf */,
+				16343744933E41ACBBDC6D35 /* Manrope-SemiBold.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +274,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				FA920F282B94365300A40276 /* fonts in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				AD96F1005EFD474F8F156A53 /* Manrope-Bold.ttf in Resources */,
+				7A3F5E6D3DFF44BE9CB3F6A7 /* Manrope-ExtraBold.ttf in Resources */,
+				16D98F5CC40E46728F4FD5F9 /* Manrope-ExtraLight.ttf in Resources */,
+				4F42E5779B6F4C67900856AF /* Manrope-Light.ttf in Resources */,
+				196184037C134605AB092B7A /* Manrope-Medium.ttf in Resources */,
+				157F1E2048AB4EFCB2AE701D /* Manrope-Regular.ttf in Resources */,
+				867092DC92D64CFDBAEACACA /* Manrope-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,10 +620,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -651,10 +688,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

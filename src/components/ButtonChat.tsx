@@ -6,6 +6,8 @@ import { RootStackParamList } from "../types/NavigatorTypes";
 
 import { useChatData } from "../hooks";
 
+import fonts from "../configs/fonts";
+
 const listUser = [
   { to: 'Lisa', me: 'Dian' },
   { to: 'Dian', me: 'Lisa' }
@@ -43,6 +45,7 @@ const styles = StyleSheet.create({
     position: 'relative'
   },
   buttonText: {
+    fontFamily: fonts.ManropeBold,
     fontWeight: 'bold'
   },
   marginTouch: {
@@ -58,6 +61,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 4
   },
   badgeText: {
+    fontFamily: fonts.ManropeBold,
     color: 'white',
     fontWeight: 'bold'
   }

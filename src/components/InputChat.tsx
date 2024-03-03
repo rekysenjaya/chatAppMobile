@@ -13,6 +13,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { sendChat } from "../store/user/actions";
 
 import images from "../configs/images";
+import fonts from "../configs/fonts";
 
 let time: any
 const InputChat = ({ to, me, onFocus }: { to: string, me: string, onFocus: () => void }) => {
@@ -54,7 +55,7 @@ const InputChat = ({ to, me, onFocus }: { to: string, me: string, onFocus: () =>
     <TouchableOpacity>
       <Image source={images.plus} style={styles.iconPlus} />
     </TouchableOpacity>
-    <TextInput onFocus={delayFocus} style={styles.inputChatText} value={chat} onChangeText={(e) => setChat(e)} returnKeyType="send" onSubmitEditing={send} />
+    <TextInput onFocus={delayFocus} style={styles.inputChatText} placeholder="Send a message" placeholderTextColor={'#B4B4B4'} value={chat} onChangeText={(e) => setChat(e)} returnKeyType="send" onSubmitEditing={send} />
   </View>)
 }
 
@@ -73,7 +74,9 @@ const styles = StyleSheet.create({
     height: 20
   },
   inputChatText: {
-    color: '#B4B4B4',
+    fontFamily: fonts.ManropeMedium,
+    fontWeight: '500',
+    color: '#fff',
     marginLeft: 10,
     flex: 1,
     padding: 12,
